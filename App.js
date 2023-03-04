@@ -20,8 +20,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.containerContent}>
-      <Text>{cat.data.fact}</Text>
-      <Image source={{ uri: `${cat.data.image}`}} style={{ width: 200, height: 200, borderRadius: 10, margin: 20}} />
+      <Text>{cat?.data.fact}</Text>
+      <Image source={{ uri: `${cat?.data.image}`}} style={{ width: 200, height: 200, borderRadius: 10, margin: 20}} />
       <TouchableHighlight onPress={handleSubmit}>
         <View style={styles.button}>
           <Text style={styles.text}>Next fact</Text>
